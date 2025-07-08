@@ -38,4 +38,20 @@ func main() {
 
 	fmt.Println(slice2)
 
+	slice3 := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
+
+	slice4 := slice3 // reference copy
+
+	slice4[0] = 2
+
+	fmt.Println(slice3) // output [2 2 3 4 5 6 7 8 9]
+
+	slice5 := slice3[:5] // slice[0:5]
+
+	slice5[0] = 100
+
+	slice5 = append(slice5, 600)
+
+	fmt.Println(slice5) //output [100 2 3 4 5 600]
+
 }
