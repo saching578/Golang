@@ -13,7 +13,7 @@ func main() {
 		"b": 2,
 		"c": 3,
 	}
-	//iterate over the map using range
+	//iterate over the map using range k = key, v=value
 	for k, v := range m {
 		println(k, v)
 	}
